@@ -6,7 +6,7 @@ export class BlogController {
   constructor(private readonly blogService: BlogService) {}
 
   @Post()
-  create(@Body() blogPost: { id: number; title: string; content: string }) {
+  create(@Body() blogPost: { id: number ; title: string; content: string }) {
     this.blogService.create(blogPost);
   }
   
